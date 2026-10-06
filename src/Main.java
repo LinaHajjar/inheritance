@@ -2,14 +2,20 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        Member member1=new Member("Lina", 1);
+        Member member2=new Premium("Andreas", 2);
+        Member member3=new Student("Maria", 3);
+
+        System.out.println(member1.getName()+ ": "+ member1.getMemberId() + "\nprice: "+ member1.getPrice()+ " . Maks antal bookinger: " + member1.getMaksBookinger());
+        System.out.println("du er en: "+ member1.type()+ " member");
+
+        System.out.println(member2.getName()+ ": "+ member2.getMemberId() + "\nprice: "+ member2.getPrice()+ " . Maks antal bookinger: " + member2.getMaksBookinger());
+        System.out.println("du er en: "+ member2.type()+ " member");
+
+        System.out.println(member3.getName()+ ": "+ member3.getMemberId() + "\nprice: "+ member3.getPrice()+ " . Maks antal bookinger: " + member3.getMaksBookinger());
+        System.out.println("du er en: "+ member3.type()+ " member");
+
+
     }
 }
