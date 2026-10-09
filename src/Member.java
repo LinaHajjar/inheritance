@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Member {
+public class Member { //a member is a normal/basic member
     private String name;
     private int memberId;
     private double price;

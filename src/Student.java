@@ -1,9 +1,18 @@
+import java.lang.classfile.Attribute;
+
 public class Student extends Member{
+
+    String school;
 
     public Student (String name, int memberId){
         super(name, memberId);
     }
 
+    public Student(String name, int memberId, String school){ //overload
+        super(name, memberId);
+        this.school=school;
+
+    }
 
     @Override
     public double getPrice(){
@@ -18,5 +27,9 @@ public class Student extends Member{
     @Override
     public String type(){
         return "Student";
+    }
+
+    public String getSchool() {
+        return school;
     }
 }

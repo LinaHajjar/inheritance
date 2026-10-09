@@ -5,7 +5,10 @@ public class Main {
 
         Member member1=new Member("Lina", 1);
         Member member2=new Premium("Andreas", 2);
-        Member member3=new Student("Maria", 3);
+        Student member3=new Student("Maria", 3, "EK");
+        Member student=new Student("Aya", 12);
+
+        //Member pensiomist=new Pensionist();
 
         System.out.println(member1.getName()+ ": "+ member1.getMemberId() + "\nprice: "+ member1.getPrice()+ " . Maks antal bookinger: " + member1.getMaksBookinger());
         System.out.println("du er en: "+ member1.type()+ " member");
@@ -13,8 +16,11 @@ public class Main {
         System.out.println(member2.getName()+ ": "+ member2.getMemberId() + "\nprice: "+ member2.getPrice()+ " . Maks antal bookinger: " + member2.getMaksBookinger());
         System.out.println("du er en: "+ member2.type()+ " member");
 
-        System.out.println(member3.getName()+ ": "+ member3.getMemberId() + "\nprice: "+ member3.getPrice()+ " . Maks antal bookinger: " + member3.getMaksBookinger());
+        System.out.println(member3.getName()+ ": "+ member3.getMemberId() + "\nprice: "+ member3.getPrice()+ " . Maks antal bookinger: " + member3.getMaksBookinger() + "\nSchool: " + member3.getSchool());
         System.out.println("du er en: "+ member3.type()+ " member");
+
+        System.out.println(student.getName()+ ": "+ student.getMemberId() + "\nprice: "+ student.getPrice()+ " . Maks antal bookinger: " + student.getMaksBookinger());
+        System.out.println("du er en: "+ student.type()+ " member");
 
 
     }
