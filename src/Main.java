@@ -8,7 +8,7 @@ public class Main {
         Student member3=new Student("Maria", 3, "EK");
         Member student=new Student("Aya", 12);
 
-        //Member pensiomist=new Pensionist();
+        Member pensionist=new Pensionist("anders", 21, "AP pension");
 
         System.out.println(member1.getName()+ ": "+ member1.getMemberId() + "\nprice: "+ member1.getPrice()+ " . Maks antal bookinger: " + member1.getMaksBookinger());
         System.out.println("du er en: "+ member1.type()+ " member");
@@ -22,6 +22,8 @@ public class Main {
         System.out.println(student.getName()+ ": "+ student.getMemberId() + "\nprice: "+ student.getPrice()+ " . Maks antal bookinger: " + student.getMaksBookinger());
         System.out.println("du er en: "+ student.type()+ " member");
 
+        System.out.println(pensionist.getName()+ ": "+ pensionist.getMemberId() + "\nprice: "+ pensionist.getPrice()+ " . Maks antal bookinger: " + pensionist.getMaksBookinger());
+        System.out.println("du er en: "+ pensionist.type()+ " member");
 
     }
 }
